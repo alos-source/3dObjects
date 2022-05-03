@@ -1,0 +1,16 @@
+{
+    "parameterSets": {
+        "test": {
+            "HEIGHT": "40",
+            "LEN_BASE": "60",
+            "STEPS_NO": "5",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "1",
+            "THICK": "3",
+            "WIDTH": "60",
+            "cornerRad": "3",
+            "fudge": "0.001"
+        }
+    },
+    "fileFormatVersion": "1"
+}
