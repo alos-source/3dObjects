@@ -28,6 +28,11 @@ module steps(number, strength, space, width){
     }
     }
 
+module corner(WIDTH,DEPTH){
+difference() {
+cube([WIDTH, DEPTH, WIDTH]);
+rotate([270,0,0])translate([WIDTH,-WIDTH,0])cylinder(DEPTH, r=WIDTH, $fn=100);
+}};
 
 //for (i = [0 : STEPS_NO-1]){
 //translate([0,LEN_BASE-(STRENGTH)-STEPS_SPACE*i,THICK])cube([WIDTH,STRENGTH,STRENGTH]);
@@ -41,3 +46,5 @@ module steps(number, strength, space, width){
 body(WIDTH,LEN_BASE,HEIGHT,THICK);
 translate([0,LEN_BASE,THICK])
 steps(STEPS_NO,STRENGTH,STEPS_SPACE,WIDTH);
+rotate([0,0,90])translate([THICK,-WIDTH,THICK])
+corner(HEIGHT/5,WIDTH);
