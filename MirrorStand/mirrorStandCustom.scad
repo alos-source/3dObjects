@@ -4,13 +4,13 @@ LEN_BASE = 60; // [10:100] Base Length
 // Base width
 WIDTH = 60; // [10:100] Base width
 // Thickness of Base and Back
-THICK = 3; // [1:10] Thickness of Base and Back
+THICK = 2; // [1:10] Thickness of Base and Back
 // height of Back
 HEIGHT = 40; // [10:80] height of Back
 // Number of Steps
 STEPS_NO = 5;// [2:8] Number of Steps
 // Strength of Steps
-STRENGTH = 1; // [1:10] Strength of Steps
+STRENGTH = 2; // [1:10] Strength of Steps
 // Space between Steps
 STEPS_SPACE = 10;// [1:10] Space between Steps
 // radius of curved corners
