@@ -24,7 +24,7 @@ module body(width, length, heigth, thickness){
 cube([width,length,thickness]);//Base
 difference() {
     cube([width,thickness,heigth]);//Back
-    translate([width/2,0,heigth])rotate([90,0,0])scale([.75,1.5])cylinder(  10, d=40, center=true);};//Back-Cut-Out
+    translate([width/2,0,heigth])rotate([90,0,0])cylinder(  10, d=40, center=true);};//Back-Cut-Out
 rotate([0,0,90])translate([THICK,-width,thickness])
 corner(heigth/10,width);//Front Corner Rounding
 rotate([90,0,0])cube([width,thickness,15]);//Back Stabilizer
@@ -35,10 +35,21 @@ translate([width/2,length,0])cylinder(  thickness, d=5);//Front Indicator
 
 }
 
+module base(width, length, thickness){
+cube([1.4*width,1.4*length,thickness]);//Base
+translate([width/2,length/2,0])cylinder(  thickness*2, d=4);
+    
+    }
 
 module steps(number, strength, space, width){
     for (i = [0 : number-1]){
    translate([0,-(strength)-space*i,0])cube([width,strength,strength]);
+    }
+    }
+
+module clock(number, strength, space, width){
+    for (i = [0 : number-1]){
+   rotate([0,20,0])cube([width,strength,strength]);
     }
     }
 
@@ -56,3 +67,4 @@ body(WIDTH,LEN_BASE,HEIGHT,THICK);
 translate([WIDTH/2,(LEN_BASE-15)/2,THICK])cylinder(  20, d=5, center=true);}
 translate([0,LEN_BASE,THICK])
 steps(STEPS_NO,STRENGTH,STEPS_SPACE,WIDTH);
+translate([0,0,-10])base(LEN_BASE,LEN_BASE,THICK);
