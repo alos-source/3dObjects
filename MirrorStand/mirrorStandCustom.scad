@@ -41,6 +41,21 @@ translate([width/2,length,0])cylinder(  thickness, d=5);//Front Indicator
 
 translate([0,LEN_BASE,THICK])
 steps(STEPS_NO,STRENGTH,STEPS_SPACE,WIDTH);
+
+translate([width-8,-20,0])//Back left
+difference() { //Back support
+    cube([4,20,heigth]);
+    translate([0,-10,heigth-5])rotate([0,90,0])scale([(WIDTH-20)/40,1.4])cylinder(  width, d=45, center=true);//Back-Cut-Out
+    
+    };
+
+translate([4,-20,0])//Back right
+difference() { //Back support
+    cube([4,20,heigth]);
+    translate([0,-10,heigth-5])rotate([0,90,0])scale([(WIDTH-20)/40,1.4])cylinder(  width, d=45, center=true);//Back-Cut-Out
+    
+    };
+
 }
 
 
