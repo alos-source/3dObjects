@@ -20,6 +20,16 @@
             "THICK": "3",
             "WIDTH": "50",
             "cornerRad": "3"
+        },
+        "Max": {
+            "HEIGHT": "80",
+            "LEN_BASE": "60",
+            "STEPS_NO": "5",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "2",
+            "THICK": "2",
+            "WIDTH": "120",
+            "cornerRad": "3"
         }
     },
     "fileFormatVersion": "1"
