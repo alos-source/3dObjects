@@ -6,7 +6,7 @@ WIDTH = 80;//[40:120]
 // Thickness of Base and Back
 THICK = 2; //[1:4]
 // height of Back
-HEIGHT = 40; //[10:80]
+HEIGHT = 40; //[20:80]
 // Number of Steps
 STEPS_NO = 5;//[1:8]
 // Strength of Steps
@@ -45,14 +45,14 @@ steps(STEPS_NO,STRENGTH,STEPS_SPACE,WIDTH);
 translate([width-8,-20,0])//Back left
 difference() { //Back support
     cube([4,20,heigth]);
-    translate([0,-10,heigth-5])rotate([0,90,0])scale([(WIDTH-20)/40,1.4])cylinder(  width, d=45, center=true);//Back-Cut-Out
+    translate([0,-heigth/2-40,heigth])rotate([0,90,0])scale([(heigth/2+10)/40,50/heigth])cylinder(  heigth, d=(3.6*heigth), center=true);//Back-Cut-Out
     
     };
 
 translate([4,-20,0])//Back right
 difference() { //Back support
     cube([4,20,heigth]);
-    translate([0,-10,heigth-5])rotate([0,90,0])scale([(WIDTH-20)/40,1.4])cylinder(  width, d=45, center=true);//Back-Cut-Out
+    translate([0,-heigth/2-40,heigth])rotate([0,90,0])scale([(heigth/2+10)/40,50/heigth])cylinder(  heigth, d=(3.6*heigth), center=true);//Back-Cut-Out
     
     };
 
@@ -81,7 +81,7 @@ translate([WIDTH/2,(LEN_BASE-15)/2,THICK])cylinder(  20, d=5, center=true);// Cu
 translate([WIDTH/2,(LEN_BASE),0])scale([(WIDTH-20)/40,1.5])cylinder(  20, d=LEN_BASE*0.66, center=true);//Base Cut Out Front
 
 
-translate([WIDTH/2,-35,0])scale([(WIDTH)/40,1.5])cylinder(  10, d=40, center=true);//Base Cut Out Back
+translate([WIDTH/2,-35,0])scale([(WIDTH)/40,1.5])cylinder(  20, d=40, center=true);//Base Cut Out Back
     
 translate([WIDTH+10,20,0])scale([(WIDTH)/100,1.5])sphere(r = 25);//Side Left Cut Out
 
