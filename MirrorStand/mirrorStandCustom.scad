@@ -42,17 +42,17 @@ translate([width/2,length,0])cylinder(  thickness, d=5);//Front Indicator
 translate([0,LEN_BASE,THICK])
 steps(STEPS_NO,STRENGTH,STEPS_SPACE,WIDTH);
 
-translate([width-8,-20,0])//Back left
+translate([width-4,-20,0])//Back left
 difference() { //Back support
     cube([4,20,heigth]);
-    translate([0,-heigth/2-40,heigth])rotate([0,90,0])scale([(heigth/2+10)/40,50/heigth])cylinder(  heigth, d=(3.6*heigth), center=true);//Back-Cut-Out
+    translate([0,-heigth*1.6+20,heigth])rotate([0,90,0])scale([1,1])cylinder(  heigth, d=(3.2*heigth), center=true);//Back-Cut-Out
     
     };
 
-translate([4,-20,0])//Back right
+translate([0,-20,0])//Back right
 difference() { //Back support
     cube([4,20,heigth]);
-    translate([0,-heigth/2-40,heigth])rotate([0,90,0])scale([(heigth/2+10)/40,50/heigth])cylinder(  heigth, d=(3.6*heigth), center=true);//Back-Cut-Out
+    translate([0,-heigth*1.6+20,heigth])rotate([0,90,0])scale([(1),1])cylinder(  heigth, d=(3.2*heigth), center=true);//Back-Cut-Out
     
     };
 
