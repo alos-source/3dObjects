@@ -28,11 +28,12 @@ cube([width,length,thickness]);//Base
 
 difference() {
     cube([width,thickness,heigth]);//Back
-    translate([width/2,0,heigth])rotate([90,0,0])scale([(WIDTH-20)/40,1.4])cylinder(  10, d=45, center=true);//Back-Cut-Out
+    translate([width/2,0,heigth])rotate([90,0,0])scale([(WIDTH-20)/40,width/60*(heigth/40)])cylinder(  10, d=45, center=true);//Back-Cut-Out
     
     };
 rotate([0,0,90])translate([THICK,-width,thickness])
 corner(heigth/10,width);//Front Corner Rounding
+cube([width,thickness,heigth/6]);
 rotate([90,0,0])cube([width,thickness,20]);//Back Stabilizer
 rotate([0,270,90])translate([thickness,-width,0])
 corner(heigth/10,width);//Back Corner Rounding
