@@ -6,7 +6,7 @@ WIDTH = 80;//[40:120]
 // Thickness of Base and Back
 THICK = 2; //[1:4]
 // height of Back
-HEIGHT = 40; //[20:80]
+HEIGHT = 40; //[30:60]
 // Number of Steps
 STEPS_NO = 5;//[1:8]
 // Strength of Steps
@@ -34,7 +34,7 @@ difference() {
 rotate([0,0,90])translate([thickness,-width,thickness])
 corner(heigth/10,width);//Front Corner Rounding
 cube([width,thickness,heigth/6]);// Fill the gap bewteen roundings on base
-rotate([90,0,0])cube([width,thickness,20]);//Back Stabilizer
+rotate([90,0,0])cube([width,thickness,heigth/2+5]);//Back Stabilizer
 rotate([0,270,90])translate([thickness,-width,0])
 corner(heigth/10,width);//Back Corner Rounding
 
