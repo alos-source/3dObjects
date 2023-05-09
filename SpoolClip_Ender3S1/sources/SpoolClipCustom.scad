@@ -25,7 +25,7 @@ difference() {
 translate([DIA/2,0,0]) cube([LEGLENGTH,STRENGTH,HEIGHT]);
 translate([0,DIA/2,0]) cube([STRENGTH,LEGLENGTH,HEIGHT]);
  
-rotate(130,90,0)translate([-STRENGTH/2,DIA/2,0]) cube([STRENGTH,TOPLENGTH,HEIGHT]);
+rotate([0,0,120])translate([-STRENGTH,DIA/2,0]) cube([STRENGTH,TOPLENGTH,HEIGHT]);
     
 
     
