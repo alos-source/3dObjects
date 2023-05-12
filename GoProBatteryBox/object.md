@@ -18,4 +18,4 @@ Work in progress. At the moment only the versions for 2 and 3 Batteries and thin
 # Hosted on
 - [GitHub](https://github.com/alos-source/3dObjects/tree/master/)
 - [Thingiverse](https://www.thingiverse.com/thing:6021569)
-- [Printables](https://www.printables.com/de/model/466708)
+- [Printables](https://www.printables.com/de/model/479755)
