@@ -1,0 +1,36 @@
+{
+    "parameterSets": {
+        "test": {
+            "HEIGHT": "40",
+            "LEN_BASE": "60",
+            "STEPS_NO": "5",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "1",
+            "THICK": "3",
+            "WIDTH": "60",
+            "cornerRad": "3",
+            "fudge": "0.001"
+        },
+        "Mini": {
+            "HEIGHT": "25",
+            "LEN_BASE": "30",
+            "STEPS_NO": "1",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "1",
+            "THICK": "3",
+            "WIDTH": "50",
+            "cornerRad": "3"
+        },
+        "Max": {
+            "HEIGHT": "80",
+            "LEN_BASE": "60",
+            "STEPS_NO": "5",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "2",
+            "THICK": "2",
+            "WIDTH": "120",
+            "cornerRad": "3"
+        }
+    },
+    "fileFormatVersion": "1"
+}
