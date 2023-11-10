@@ -5,8 +5,8 @@ Designed to set up a european wall-socket wifi-repeater on a desk or a hanger. U
 ![](./media/20231109_200711.jpg)
 ![](./media/20231109_200742.jpg)
 
-# Material
-Tested with PLA, no specific material recommendation.
+# Printing/Material
+Tested with PLA, no specific material recommendation. Printing is recommended in sideways orientation.
 
 # Software
 Designed using OpenSCAD version *2021.01*.
