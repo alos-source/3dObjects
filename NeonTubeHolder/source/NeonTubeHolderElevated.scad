@@ -15,7 +15,7 @@ LEGLENGTH = 13; //[0:60]
 // measures in mm
 
 difference() {
-    cylinder(HEIGHT,DIA/2+STRENGTH,DIA/2+STRENGTH);cylinder(HEIGHT,DIA/2,DIA/2); 
+    cylinder(HEIGHT,DIA/2+STRENGTH,DIA/2+STRENGTH,$fn=50);cylinder(HEIGHT,DIA/2,DIA/2,$fn=50); 
     cube([40,40,HEIGHT]);
     }//Tube Holder with opening
     
