@@ -3,7 +3,7 @@
 DIA = 30;//[10:60]
 
 // height in mm
-HEIGHT = 08; //[02:10]
+HEIGHT = 08; //[06:10]
 
 // Strength in mm
 STRENGTH = 02; //[01:05]
@@ -31,4 +31,5 @@ rotate([0,0,135])translate([-20-28,-40/2,0])
     difference(){
         cube([30,40,HEIGHT]);//Base
         translate([STRENGTH,STRENGTH,0])cube([30-2*STRENGTH,40-2*STRENGTH,HEIGHT]);
+        rotate([0,90,0])translate([-HEIGHT/2,20,0])cylinder(h= 5, r=2, $fn=10);//Screw hole
     }
