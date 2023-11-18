@@ -2,8 +2,8 @@
 Designed for storing prismatic battery modules. This version was specifically designed for the batteries of a GoPro HERO10 Black (14x34x42 mm), but parameters allow adoption to different dimensions.
 ![Preview](media/20230512_000534.jpg)
 
-# Material
-Tested with PLA, no specific material recommendation. Cura estimates 3h 9 minutes time and 21g of material with default Settings for printing top and buttom at the same time.
+# Printing/Material
+Tested with PLA, no specific material recommendation. Cura estimates 3h 9 minutes time and 21g of material with default Settings on Ender3S1 for printing top and buttom at the same time.
 
 # Software
 Designed using OpenSCAD version *2021.01*.
