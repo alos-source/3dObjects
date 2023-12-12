@@ -11,6 +11,8 @@ STRENGTH = 02; //[01:05]
 // Leg Length in mm
 LEGLENGTH = 13; //[0:60]
 
+// Create with open base
+OPEN_BASE = false;//[false:true]
 
 // measures in mm
 
@@ -32,4 +34,8 @@ rotate([0,0,135])translate([-20-28,-40/2,0])
         cube([30,40,HEIGHT]);//Base
         translate([STRENGTH,STRENGTH,0])cube([30-2*STRENGTH,40-2*STRENGTH,HEIGHT]);
         rotate([0,90,0])translate([-HEIGHT/2,20,0])cylinder(h= 5, r=2, $fn=10);//Screw hole
+        
+        if (OPEN_BASE == true){
+        translate([STRENGTH-5,STRENGTH,0])cube([30-2*STRENGTH,40-2*STRENGTH,HEIGHT]);//Open Base
+        }
     }
