@@ -1,0 +1,57 @@
+{
+    "parameterSets": {
+        "Mini": {
+            "HEIGHT": "25",
+            "LEN_BASE": "30",
+            "STEPS_NO": "1",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "1",
+            "THICK": "3",
+            "WIDTH": "50",
+            "cornerRad": "3"
+        },
+        "Max": {
+            "HEIGHT": "80",
+            "LEN_BASE": "60",
+            "STEPS_NO": "5",
+            "STEPS_SPACE": "10",
+            "STRENGTH": "2",
+            "THICK": "2",
+            "WIDTH": "120",
+            "cornerRad": "3"
+        },
+        "GP10B2": {
+            "BATDEPTH": "14",
+            "BATTERY_NO": "2",
+            "HEIGHT": "30",
+            "THICK": "2",
+            "WIDTH": "34"
+        },
+        "GP10B3": {
+            "BATDEPTH": "14",
+            "BATTERY_NO": "3",
+            "HEIGHT": "30",
+            "THICK": "2",
+            "WIDTH": "34"
+        },
+        "Standardwerte des Designs": {
+            "BATDEPTH": "14",
+            "BATTERY_NO": "2",
+            "CREATE_BOTTOM": "true",
+            "CREATE_TOP": "true",
+            "HEIGHT": "40",
+            "THICK": "1",
+            "WIDTH": "34"
+        },
+        "2xThin": {
+            "BATDEPTH": "14",
+            "BATTERY_NO": "2",
+            "CREATE_BOTTOM": "true",
+            "CREATE_TOP": "true",
+            "HEIGHT": "40",
+            "THICK": "1",
+            "WIDTH": "34"
+        }
+    },
+    "fileFormatVersion": "1"
+}
