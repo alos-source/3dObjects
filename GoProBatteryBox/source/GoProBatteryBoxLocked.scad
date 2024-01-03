@@ -57,13 +57,13 @@ body(WIDTH+4*THICK,4*THICK+BATTERY_NO*(BATDEPTH+THICK),HEIGHT,THICK);
 translate([THICK,THICK*1.5,0])batterys(BATTERY_NO, THICK, WIDTH,BATDEPTH,42);    
 
 // Outer-Joint    
-translate([THICK*0.5,THICK*1.0,HEIGHT/4])cube([WIDTH+THICK*3,THICK*2+BATTERY_NO*(BATDEPTH+THICK),HEIGHT-THICK]);
+translate([THICK*1.0,THICK*1.0,HEIGHT/4])cube([WIDTH+THICK*2,THICK*2+BATTERY_NO*(BATDEPTH+THICK),HEIGHT-THICK]);
     }
 
 // Lock
-translate([0.5,(4*THICK+BATTERY_NO*(BATDEPTH+THICK)-20)/2,HEIGHT-10])rotate([270,0,0])cylinder(h=20, r= 0.5, $fn=20);
+translate([1.0,(4*THICK+BATTERY_NO*(BATDEPTH+THICK)-20)/2,HEIGHT-10])rotate([270,0,0])cylinder(h=20, r= 0.5, $fn=20);
 
-translate([WIDTH+4*THICK-0.5,(4*THICK+BATTERY_NO*(BATDEPTH+THICK)-20)/2,HEIGHT-10])rotate([270,0,0])cylinder(h=20, r= 0.5, $fn=20);
+translate([WIDTH+4*THICK-1.0,(4*THICK+BATTERY_NO*(BATDEPTH+THICK)-20)/2,HEIGHT-10])rotate([270,0,0])cylinder(h=20, r= 0.5, $fn=20);
 }
 
 // Bottom Part
