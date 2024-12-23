@@ -5,7 +5,7 @@ This model is parametric, so it could be fitted if you need a different diameter
 
 
 ## Picture
-![picture](/media/20241126_211706%20(Klein).jpg "title")
+![picture](./media/20241126_211706%20(Klein).jpg "title")
 
 ## Material
 Tested with PLA, no specific material recommendation.
